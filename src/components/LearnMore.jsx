@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { 
   AlertCircle, 
-  Heart, 
+   
   Activity, 
-  Thermometer, 
-  Pill, 
+  
+  
   Search,
-  Shield,
+  
   Stethoscope,
   X
 } from 'lucide-react';

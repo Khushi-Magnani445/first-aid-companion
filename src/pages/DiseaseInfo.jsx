@@ -21,7 +21,7 @@ import {
   Apple,
   
 } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "../components/ui/Alert";
+import { Alert} from "../components/ui/Alert";
 
 const Card = ({ children, className = '', ...props }) => (
   <div className={`rounded-lg border border-gray-200 bg-white shadow-sm ${className}`} {...props}>
@@ -43,13 +43,13 @@ const CardContent = ({ children, className = '' }) => (
 
 const DiseaseInfo = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  
   const { name = "Unknown Disease" } = location.state || {};
 
   const [diseaseInfo, setDiseaseInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
+  
   const [activeSection, setActiveSection] = useState(null);
   const getColorClass = (color, type) => {
     const colorMap = {
@@ -138,66 +138,66 @@ const DiseaseInfo = () => {
     }
   ];
 
-  const diseaseCategories = [
-    {
-      id: "chronic",
-      title: "Chronic Conditions",
-      icon: <Activity className="w-8 h-8 text-blue-500" />,
-      conditions: [
-        {
-          id: "diabetes",
-          name: "Diabetes",
-          icon: <Heart className="w-6 h-6" />,
-        },
-        {
-          id: "hypertension",
-          name: "Hypertension",
-          icon: <Thermometer className="w-6 h-6" />,
-        },
-        {
-          id: "arthritis",
-          name: "Arthritis",
-          icon: <AlertCircle className="w-6 h-6" />,
-        },
-      ],
-    },
-    {
-      id: "infectious",
-      title: "Infectious Diseases",
-      icon: <Pill className="w-8 h-8 text-red-500" />,
-      conditions: [
-        {
-          id: "covid",
-          name: "COVID-19",
-          icon: <Activity className="w-6 h-6" />,
-        },
-        {
-          id: "flu",
-          name: "Influenza",
-          icon: <AlertCircle className="w-6 h-6" />,
-        },
-        { id: "hiv", name: "HIV/AIDS", icon: <Heart className="w-6 h-6" /> },
-      ],
-    },
-    {
-      id: "mental-health",
-      title: "Mental Health",
-      icon: <BookOpen className="w-8 h-8 text-purple-500" />,
-      conditions: [
-        {
-          id: "depression",
-          name: "Depression",
-          icon: <Activity className="w-6 h-6" />,
-        },
-        {
-          id: "anxiety",
-          name: "Anxiety Disorders",
-          icon: <AlertCircle className="w-6 h-6" />,
-        },
-        { id: "ptsd", name: "PTSD", icon: <Clock className="w-6 h-6" /> },
-      ],
-    },
-  ];
+  // const diseaseCategories = [
+  //   {
+  //     id: "chronic",
+  //     title: "Chronic Conditions",
+  //     icon: <Activity className="w-8 h-8 text-blue-500" />,
+  //     conditions: [
+  //       {
+  //         id: "diabetes",
+  //         name: "Diabetes",
+  //         icon: <Heart className="w-6 h-6" />,
+  //       },
+  //       {
+  //         id: "hypertension",
+  //         name: "Hypertension",
+  //         icon: <Thermometer className="w-6 h-6" />,
+  //       },
+  //       {
+  //         id: "arthritis",
+  //         name: "Arthritis",
+  //         icon: <AlertCircle className="w-6 h-6" />,
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: "infectious",
+  //     title: "Infectious Diseases",
+  //     icon: <Pill className="w-8 h-8 text-red-500" />,
+  //     conditions: [
+  //       {
+  //         id: "covid",
+  //         name: "COVID-19",
+  //         icon: <Activity className="w-6 h-6" />,
+  //       },
+  //       {
+  //         id: "flu",
+  //         name: "Influenza",
+  //         icon: <AlertCircle className="w-6 h-6" />,
+  //       },
+  //       { id: "hiv", name: "HIV/AIDS", icon: <Heart className="w-6 h-6" /> },
+  //     ],
+  //   },
+  //   {
+  //     id: "mental-health",
+  //     title: "Mental Health",
+  //     icon: <BookOpen className="w-8 h-8 text-purple-500" />,
+  //     conditions: [
+  //       {
+  //         id: "depression",
+  //         name: "Depression",
+  //         icon: <Activity className="w-6 h-6" />,
+  //       },
+  //       {
+  //         id: "anxiety",
+  //         name: "Anxiety Disorders",
+  //         icon: <AlertCircle className="w-6 h-6" />,
+  //       },
+  //       { id: "ptsd", name: "PTSD", icon: <Clock className="w-6 h-6" /> },
+  //     ],
+  //   },
+  // ];
 
   useEffect(() => {
     if (name) {

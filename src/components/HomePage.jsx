@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import aid from '../images/aid.webp';
+
 import { ArrowDown, Phone, BookOpen } from 'lucide-react';
 import "../App.css"; // Replace with your actual image path
 // Replace with your
