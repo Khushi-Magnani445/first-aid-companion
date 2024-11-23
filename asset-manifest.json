@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/first-aid-companion/static/css/main.7900a53c.css",
-    "main.js": "/first-aid-companion/static/js/main.fdb39cd5.js",
+    "main.js": "/first-aid-companion/static/js/main.3626b131.js",
     "static/js/453.e758f733.chunk.js": "/first-aid-companion/static/js/453.e758f733.chunk.js",
     "static/media/aid.webp": "/first-aid-companion/static/media/aid.315a75f5262cd206db2c.webp",
     "index.html": "/first-aid-companion/index.html",
     "main.7900a53c.css.map": "/first-aid-companion/static/css/main.7900a53c.css.map",
-    "main.fdb39cd5.js.map": "/first-aid-companion/static/js/main.fdb39cd5.js.map",
+    "main.3626b131.js.map": "/first-aid-companion/static/js/main.3626b131.js.map",
     "453.e758f733.chunk.js.map": "/first-aid-companion/static/js/453.e758f733.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7900a53c.css",
-    "static/js/main.fdb39cd5.js"
+    "static/js/main.3626b131.js"
   ]
 }
