@@ -17,13 +17,9 @@ import {
   Clipboard,
   Shield,
   Clock3,
-  PlayCircle,
-  Utensils,
+  
   Apple,
-  X,
-  CheckCircle2,
-  XCircle,
-  Leaf,
+  
 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/Alert";
 
